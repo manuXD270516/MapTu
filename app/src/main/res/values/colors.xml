@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#2c2d30</color>
+    <color name="colorPrimaryDark">#34353b</color>-->
+
+    <color name="colorPrimary">#2d3fa4</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAzulReg">#5658c2</color>
+    <color name="colorAzulLight">#d6d7e2</color>
+    <color name="colorAzulNormal">#6c79ff</color>
+    <color name="colorNegro">#120f12</color>
+    <color name="colorLila">#ba30ba</color>
+
+    <!--<color name="colorAccent">#f41a25</color>-->
+    <!--<color name="colorAccent">#ff4a40</color-->
+    <color name="colorAccent">#2680ff</color>
+    <color name="colorBlanco">#ffffff</color>
+
+   <!--<color name="colorAccent">#67a3f7</color>-->
+    <!--<color name="background">#ececec</color>-->
+    <color name="background">#eaeaea</color>
+
+    <color name="fondoUser">#eeeef1</color>
+    <!--<color name="fondoUser">#14b449</color>-->
+
+
+    <drawable name="highlight_pressed">#b7cdda</drawable>
+    <drawable name="highlight_focused">#e6effc</drawable>
+
+    <!--<drawable name="highlight_pressed">#98dff3</drawable>
+    <drawable name="highlight_focused">#b9e6f3</drawable>-->
+</resources>

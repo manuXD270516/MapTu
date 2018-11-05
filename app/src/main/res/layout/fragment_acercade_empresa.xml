@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:elegantTextHeight="true"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textColor="@color/colorNegro"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_empresa" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+
+        android:text="@string/desc_empresa" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:elegantTextHeight="true"
+        android:text="NUESTROS SERVICIOS"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorNegro"
+        android:textSize="18dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:elegantTextHeight="true"
+        android:text="Desarrollo Web"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        android:textStyle="bold|italic" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="20"
+            app:srcCompat="@drawable/desarrolloweb_empresa" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:textAlignment="gravity"
+            android:layout_weight="10"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+
+            android:textStyle="bold"
+
+            android:text="@string/desc_servicioweb" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:elegantTextHeight="true"
+        android:text="Aplicaciones Moviles"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="20"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/appmoviles_acerca" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="10"
+            android:textAlignment="inherit"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold|italic"
+
+            android:text="@string/desc_appmoviles" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:elegantTextHeight="true"
+        android:text="NUESTRAS OFICINAS"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorNegro"
+        android:textSize="18dp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_marginTop="-5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_location_on_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+
+        android:text="@string/desc_oficinas" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:elegantTextHeight="true"
+        android:text="SIGUENOS EN NUESTRAS REDES SOCIALES"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorNegro"
+        android:textSize="18dp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgFacebook"
+            android:layout_width="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="50"
+            android:src="@drawable/icono_fb"/>
+
+        <ImageView
+            android:id="@+id/imgTwitter"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_width="50dp"
+            android:layout_weight="50"
+            android:layout_height="50dp"
+            android:src="@drawable/icono_tw" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

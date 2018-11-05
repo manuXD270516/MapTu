@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_barNegocio"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarNegocio"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layoutNegocio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:textAlignment="center"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="220dp" />
+
+            <!--<ImageView
+                android:id="@+id/imgDetalleNegocio"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />-->
+
+            <TextView
+                android:id="@+id/twNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="40"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorAzulReg"
+                android:elevation="8dp">
+
+            </android.support.design.widget.TabLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorAzulLight" />
+
+            <!--<TextView
+                android:id="@+id/labelInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:layout_weight="40"
+                android:text="INFORMACION GENERAL :"
+                android:textAlignment="inherit"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/twDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="40"
+                android:text=""
+                android:textAlignment="inherit"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/labelDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="40"
+                android:text="DIRECCION(ES) :"
+                android:textAlignment="inherit"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/twDirec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="40"
+                android:text=""
+                android:textAlignment="inherit"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/labelTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="40"
+                android:text="TELEFONO(S) :"
+                android:textAlignment="inherit"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/twTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="40"
+                android:text=""
+                android:textAlignment="inherit"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/labelHorario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="40"
+                android:text="HORARIOS DE ATENCION :"
+                android:textAlignment="inherit"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/twHorarios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="40"
+                android:text=""
+                android:textAlignment="inherit"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/labelLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="40"
+                android:text="DIRECCION ELECTRONICA"
+                android:textAlignment="inherit"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/twLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="40"
+                android:text=""
+                android:textAlignment="inherit"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btnUbicacion"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/layout_circular"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="VER UBICACION"
+                android:textAlignment="inherit"
+                android:textColor="@color/colorBlanco" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btnMenusItems"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/layout_circular"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="VER MENUS Y PRECIOS"
+                android:textAlignment="inherit"
+                android:textColor="@color/colorBlanco" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btnLLamar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/layout_circular"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="LLAMAR"
+                android:textAlignment="inherit"
+                android:textColor="@color/colorBlanco" />-->
+
+            <!--<TextView
+            app:srcCompat="@drawable/ic_location_on_black_24dp"
+
+                android:id="@+id/textView38"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:text="TextView" />-->
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!--<TextView
+        android:id="@+id/txtDetalle_FragmentDetalleNegocio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="40"
+        android:text="TextView" />-->
+
+</LinearLayout>

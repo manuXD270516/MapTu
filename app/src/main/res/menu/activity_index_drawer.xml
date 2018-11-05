@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/categorias"
+            android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+            android:title="Categorias"/>
+        <item
+            android:id="@+id/ofertas"
+            android:icon="@drawable/ic_loyalty_black_24dp"
+            android:title="Ofertas" />
+        <item
+            android:id="@+id/lugares_Proximos"
+            android:icon="@drawable/ic_location_on_black_24dp"
+            android:title="Lugares Cercanos"
+            />
+        <item
+            android:id="@+id/contactenos"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Contactenos" />
+        <item
+            android:id="@+id/acerca_de"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="Acerca de " />
+
+    </group>
+
+    <item android:title="Mi Perfil">
+        <menu>
+            <item
+                android:id="@+id/perfil"
+                android:icon="@drawable/ic_supervisor_account_black_24dp"
+                android:title="Ver Perfil" />
+            <item
+                android:id="@+id/logOut"
+                android:icon="@drawable/ic_person_outline_black_24dp"
+                android:title="Cerrar Sesion" />
+        </menu>
+    </item>
+
+</menu>
